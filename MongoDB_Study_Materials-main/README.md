@@ -8,7 +8,18 @@
             Column-oriented databases
             Graph-based databases
     2. What is MongoDB?
+            MongoDB is a document-oriented NoSQL database used for high volume data storage. Instead of using tables and rows as in the traditional relational databases, MongoDB makes use of collections and documents. Documents consist of key-value pairs which are the basic unit of data in MongoDB. Collections contain sets of documents and function which is the equivalent of relational database tables.
     3. What are Indexes in MongoDB?
+            MongoDB uses indexing in order to make the query processing more efficient. If there is no indexing, then the MongoDB must scan every document in the collection and retrieve only those documents that match the query. Indexes are special data structures that stores some information related to the documents such that it becomes easy for MongoDB to find the right data file. The indexes are order by the value of the field specified in the index. 
+            Example:
+            db.mycol.createIndex({“age”:1})
+            {
+            “createdCollectionAutomatically” : false,
+            “numIndexesBefore” : 1,
+            “numIndexesAfter” : 2,
+            “ok” : 1
+            }
+    
     4. What are the types of Indexes available in MongoDB?
     5. Explain Index Properties in MongoDB?
     6. How many indexes does MongoDB create by default for a new collection?
