@@ -1,6 +1,12 @@
 **MongoDB Interview Questions**
 
     1. What are NoSQL databases? What are the different types of NoSQL databases?
+            NoSQL means Not Only SQL which is a non-relational database used to store data in non tabular form.
+            # Types
+            Document-based databases
+            Key-value stores
+            Column-oriented databases
+            Graph-based databases
     2. What is MongoDB?
     3. What are Indexes in MongoDB?
     4. What are the types of Indexes available in MongoDB?
